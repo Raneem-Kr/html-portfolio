@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <link rel="stylesheet" href="anmeldung.css" />
+
+  <body>
+    <div class="wrapper">
+      <fieldset>
+        <form
+          name="frmEntry"
+          id="frmEntry"
+          action="http://localhost/login.php"
+          method="post"
+        >
+          <h1>Log-in</h1>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="enter your email"
+            required
+            autofocus
+          />
+
+          <label for="txtpassword">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="txtpassword"
+            value=""
+            placeholder="enter your password"
+            required
+          />
+
+          <button class="login" name="login" type="submit">Login</button>
+          <p class="register-link">
+            Don't have an account?
+            <a href="registration.html">Create an account</a>
+          </p>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>

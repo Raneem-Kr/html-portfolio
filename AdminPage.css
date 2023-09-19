@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+
+  background-position: center;
+  background-image: url(./Images&Icons/verticalChains.jpg);
+}
+
+nav {
+  background-color: #b12903;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+}
+
+a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+#content {
+  padding: 20px;
+  color: white;
+}
+h1 {
+  color: darkgoldenrod;
+  font-size: 75px;
+}

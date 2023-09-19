@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resin Keychains | HomePage</title>
+    <script
+      src="https://kit.fontawesome.com/218d8f84d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="homeMenu.css" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidenav">
+        <img
+          src="./Images&Icons/logo.png"
+          style="height: 300px; width: 288px"
+        />
+        <ul>
+          <li>
+            <a href="http://localhost/shopOurKeychains.php"
+              >Shop our Products</a
+            >
+          </li>
+           <li>
+            <a href="http://localhost/upcycle.html"
+              >Upcycle</a
+            >
+          </li>
+          <li>
+            <a href="http://localhost/anmeldung.html"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a href="about.html">About us</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          
+          
+    <!-- Setting Account Dropdown -->
+    <div class="setting-account">
+      <div class="menu-icon">
+        <i class="fas fa-cog"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="http://localhost/dashboard.php">UserProfile</a></li>
+         
+      </ul>
+    </div>
+
+        <div class="social-media">
+          <a
+            href="https://www.instagram.com/terms/unblock/?next=/api/v1/web/qp/batch_fetch_web/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100094025466182"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.pinterest.com"
+            ><i class="fa-brands fa-square-pinterest"></i
+          ></a>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    
+  
+<script>
+   // JavaScript to toggle the display of the menu
+      const menuIcon = document.querySelector(".menu-icon");
+      const settingAccount = document.querySelector(".setting-account");
+
+      menuIcon.addEventListener("click", function () {
+        settingAccount.classList.toggle("open");
+      });
+
+      // JavaScript to hide the menu when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (!settingAccount.contains(event.target) && event.target !== menuIcon) {
+          settingAccount.classList.remove("open");
+        }
+      });
+
+
+
+</script>
+  </body>
+</html>
+  </body>
+</html>

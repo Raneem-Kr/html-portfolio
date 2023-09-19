@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Images&Icons/strawberry.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.6;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.about-text {
+  flex: 1;
+  background-color: rgba(255, 105, 180, 0.4);
+  border-radius: 5px;
+  color: white;
+  padding: 25px;
+}
+
+.about-images {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-images img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+/* about.css */
+
+/* about.css */
+
+.about-images p {
+  font-size: 18px;
+  color: #d0a3a3;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  margin-top: 275px;
+  background-color: rgba(255, 105, 180, 0.4);
+  color: white;
+  padding: 0.25em 0;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgba(255, 105, 180);
+  margin: 18px;
+  border-radius: 5px;
+}
+
+.social-media a i {
+  font-size: 2em;
+  color: #eee;
+  opacity: 8.9;
+}
+
+.social-media a:hover {
+  background-color: rgba(255, 105, 180, 0.4);
+}
+.footerBottom {
+  text-align: center;
+}

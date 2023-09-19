@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>about us</title>
+    <link rel="stylesheet" type="text/css" href="Upcycle.css">
+    <script src="https://kit.fontawesome.com/218d8f84d4.js" crossorigin="anonymous"></script>
+	  <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("upcycleForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Show the alert message
+                var alertMessage = document.createElement("div");
+                alertMessage.classList.add("alert-message");
+                alertMessage.textContent = "Thanks for submitting the form! We will contact you as soon as possible.";
+                document.body.appendChild(alertMessage);
+
+                // Remove the alert message after 10 seconds
+                setTimeout(function() {
+                    alertMessage.remove();
+                }, 10000);
+
+                // Optionally, you can reset the form fields here
+                document.getElementById("upcycleForm").reset();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <li> <a href="http://localhost/anmeldung.html"> Log in </a> </li>
+            <li> <a href="http://localhost/register.php"> Register </a></li>
+        </nav>
+    </header>
+
+    <div class="text">
+        We deeply care about the environment and believe that you share our commitment. Recognising that resin materials are
+        challenging to recycle, we have developed an upcycling program to extend the lifespan of our products. Here is how it
+        works:
+        <ol>
+            <li>Login to your account or register as a new customer.</li>
+            <li>Follow this <a href="#formular">link</a> to access our upcycle formula.</li>
+            <li>Fill in the required information.</li>
+            <li>Upload an image of the product you wish to upcycle.</li>
+            <li>Once we receive your request, we will send you an email with a pre-paid shipment label. Yes, shipping is on us!</li>
+            <li>Simply send us your product using the provided label.</li>
+            <li>Within 3-4 weeks, we will upcycle your product and ship it back to your address.</li>
+            <li>Click <a href="./beforeAfter.html">here</a> to see an example of an upcycled item</li>
+        </ol>
+        By participating in our upcycling program, you contribute to minimizing waste and promoting sustainability. Together,
+        let’s make a positive impact on our environment. Thank you for joining us on this eco-friendly journey!
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="formular">
+        <br>
+        <br>
+        <form id="upcycleForm">
+            <h1>Upcycle items</h1>
+
+            <label for="name">Type of the item</label>
+            <input type="text" id="name" name="Type of the item" placeholder="please tell us which item you would like to upcycle" required>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="please tell us how many items you would like to upcycle" min="1" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="please tell us more about your suggestion/expectations, ..." required></textarea>
+
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="price">Address</label>
+            <input type="text" id="address" name="Address" placeholder="Enter your address so that we can send you a shipment label" required>
+
+            <button type="submit" class="btn">Submit Form</button>
+        </form>
+    </div>
+
+    <footer class="main-footer">
+        <div class="social-media">
+            <a href="https://www.instagram.com/terms/unblock/?next=/api/v1/web/qp/batch_fetch_web" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            </a>
+        
+            <a href="https://www.facebook.com/profile.php?id=100094025466182" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i></a>
+            </a>
+        
+            <a href="https://www.pinterest.com" target="_blank">
+                <i class="fa-brands fa-square-pinterest"></i></a>
+            </a>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; Designed by Resin Keychains GmbH</p>
+        </div>
+    </footer>
+</body>
+</html>

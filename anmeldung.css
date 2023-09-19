@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  background-image: url(./Images&Icons/pinkOranges.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  width: 500px;
+  margin: 10em auto;
+  background-color: rgba(255, 102, 204, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #d3d3d3;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.login {
+  background-color: #385712;
+  color: white;
+  font-size: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: green;
+}
+input:focus {
+  background-color: #385712;
+}

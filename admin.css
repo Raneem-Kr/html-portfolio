@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+    url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  background-image: url(./Images&Icons/HomePage.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.635);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ce801a90;
+  padding: 10px;
+  height: 80px;
+}
+
+.navbar-logo {
+  height: 100px;
+  width: 200px;
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.navbar-menu li a:hover {
+  background-color: rgb(236, 189, 70);
+}
+.navbar-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-icons i {
+  color: #333;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: rgb(255, 170, 102);
+}
+h1 {
+  margin-top: 190px;
+  text-align: center;
+  color: crimson;
+  font-size: xx-large;
+}
+.cart a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  margin: 50px;
+}

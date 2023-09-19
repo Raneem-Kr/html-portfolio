@@ -1,0 +1,129 @@
+/* menu */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*font-family: open sans;*/
+  background-image: url(./Images&Icons/HomePage.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* menu */
+/* ... (existing styles for the menu) ... */
+
+/* Setting Account Dropdown */
+.setting-account {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.9);
+  list-style: none;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.menu li {
+  padding: 5px 10px;
+  text-align: right;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Show the menu when the icon is clicked */
+.setting-account.open .menu {
+  display: block;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.sidenav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 20vw;
+  height: 100vh;
+  background: rgb(255, 170, 102, 0.5);
+}
+.wrapper .sidenav h1 {
+  text-align: center;
+  color: #fff;
+  line-height: 90px;
+  border-bottom: 1px dotted White;
+  margin-bottom: 50px;
+}
+.wrapper .sidenav ul li {
+  text-align: center;
+  list-style: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidenav li:hover {
+  background-color: rgb(255, 170, 102);
+}
+.wrapper .sidenav .social-media {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+  display: flex;
+}
+.wrapper .sidenav .social-media a {
+  margin: 0 15px;
+  background: rgb(255, 170, 102);
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .sidenav .social-media a:hover {
+  background-color: rgb(255, 170, 102, 0.5);
+}
+
+.wrapper .sidenav .social-media a i {
+  margin: 0 auto;
+}
+
+/*home*/
+
+.content {
+  margin: 50px;
+}
+
+.content h2 {
+  font-size: 4em;
+  text-align: right;
+  padding-right: 180px;
+}
